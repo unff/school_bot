@@ -33,7 +33,7 @@ void setup()
   
   sendData("AT+RST\r\n", 100, DEBUG); //reset module
   sendData("AT+CWMODE=1\r\n", 150, DEBUG); //set station mode
-  sendData("AT+CWJAP=\"Skynet\",\"myrouter\"\r\n", 100, DEBUG); //connect wi-fi network (replace XXXXX by your Wi-Fi router SSID and YYYYY by its password
+  sendData("AT+CWJAP=\"XXXXX\",\"YYYYY\"\r\n", 100, DEBUG); //connect wi-fi network (replace XXXXX by your Wi-Fi router SSID and YYYYY by its password
   delay(10000); //wait for connection
 
   sendData("AT+CIFSR\r\n", 100, DEBUG); //show IP address
